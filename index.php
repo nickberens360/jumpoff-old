@@ -1,69 +1,28 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <title>Title of the document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <?php include("atomic-head.php"); ?>
-
-    <style>
-        html, body {
-            height: 100%;
-        }
-
-        .indexBlock {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-            max-width: 900px;;
-            margin: auto;
-        }
-
-        img {
-            max-width: 100%;
-
-        }
-        .shadow{
-            box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        p {
-            font-family: sans-serif;
-        }
-
-        a {
-            color: #4BC6EF;
-            font-weight:bold;
-        }
-        .logo{
-            display: inline-block;
-            margin-bottom: 61px;
-        }
-
-    </style>
-
+    <?php include ("atomic-head.php");?>
 </head>
-
 <body>
-<div class="indexBlock">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <img class="logo" src="http://atomicdocs.io/img/atomic-logo.svg">
+<p>Edward</p>
 
-    <p>By default, Atomic Docs is set up for Sass. If you are using Less or Sass check out this <a href="http://atomicdocs.io/docs/less-stylus">post</a>.</p>
-
-    <p>Set up in your php local environment and configure your preprocessor and start
-        <a href="atomic-core/modules.php">here</a>.</p>
-
-    <p>This GIF pretty much explains what to do after that. Otherwise you can checkout
-        this <a href="https://www.youtube.com/watch?v=e8LjP6ynryQ" target="_blank">video</a>.</p><br/>
-    <img class="shadow" src="http://atomicdocs.io/img/demo1.gif"/>
-
-</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<?php include ("atomic-foot.php");?>
 </body>
-
-<?php include("atomic-foot.php"); ?>
-
 </html>
-
-
-
